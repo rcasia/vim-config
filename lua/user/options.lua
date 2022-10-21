@@ -1,4 +1,3 @@
-
 vim.opt.so             = 5
 vim.opt.number         = true
 vim.opt.relativenumber = true
