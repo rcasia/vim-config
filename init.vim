@@ -9,7 +9,5 @@ endif
 
 exe ' source ' . configDir . '/lua/user/plugins.vim'
 exe ' source ' . configDir . '/lua/user/mappings.vim'
+exe ' source ' . configDir . '/lua/user/options.vim'
 lua require("user.treesitter")
-lua require("user.options")
-
-
