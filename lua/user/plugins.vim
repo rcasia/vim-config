@@ -1,3 +1,5 @@
+let g:coc_disable_startup_warning = 1
+
 
 """" AUTOMATIC PLUGIN INSTALLATION
 "
@@ -27,12 +29,15 @@ call plug#begin()
 
 " Make sure you use single quotes
 
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 Plug 'junegunn/vim-easy-align'
 
 Plug 'dhruvasagar/vim-open-url'
 
 Plug 'nvim-treesitter/nvim-treesitter'
+
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
 " Initialize plugin system
 " - Automatically executes `filetype plugin indent on` and `syntax enable`.
 call plug#end()
