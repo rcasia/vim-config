@@ -19,15 +19,6 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
 
 
 call plug#begin()
-" The default plugin directory will be as follows:
-"   - Vim (Linux/macOS): '~/.vim/plugged'
-"   - Vim (Windows): '~/vimfiles/plugged'
-"   - Neovim (Linux/macOS/Windows): stdpath('data') . '/plugged'
-" You can specify a custom plugin directory by passing it as the argument
-"   - e.g. `call plug#begin('~/.vim/plugged')`
-"   - Avoid using standard Vim directory names like 'plugin'
-
-" Make sure you use single quotes
 
 Plug 'junegunn/vim-easy-align'
 
@@ -37,10 +28,8 @@ Plug 'nvim-treesitter/nvim-treesitter'
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
-" Shorthand notation; fetches https://github.com/junegunn/vim-easy-align
-" Initialize plugin system
-" - Automatically executes `filetype plugin indent on` and `syntax enable`.
+Plug 'folke/which-key.nvim'
+
+Plug 'preservim/nerdtree'
+
 call plug#end()
-" You can revert the settings after the call like so:
-"   filetype indent off   " Disable file-type-specific indentation
-"   syntax off            " Disable syntax highlighting

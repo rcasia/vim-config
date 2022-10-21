@@ -3,11 +3,11 @@ if not status_ok then
 	return
 end
 
-require 'nvim-treesitter.install'.compilers = { 'clang++'}
+require 'nvim-treesitter.install'.compilers = { 'c', 'clang++'}
 
 configs.setup({
 	ensure_installed = "all", -- one of "all" or a list of languages
-	ignore_install = { "" }, -- List of parsers to ignore installing
+	ignore_install = { "uv_dlopen", "foam", "lalrpop", "svelte", "rst", "julia", "norg", "vim", "v", "haskell"}, -- List of parsers to ignore installing
 	highlight = {
 		enable = true, -- false will disable the whole extension
 		disable = { "css" }, -- list of language that will be disabled
