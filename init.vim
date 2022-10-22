@@ -5,7 +5,6 @@ else
    let configDir = $HOME . '/.config/nvim'
 endif
 
-
 exe ' source ' . configDir . '/lua/user/plugins.vim'
 exe ' source ' . configDir . '/lua/user/options.vim'
 exe ' source ' . configDir . '/plug-config/coc.vim'

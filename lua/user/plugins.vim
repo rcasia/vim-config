@@ -32,4 +32,13 @@ Plug 'folke/which-key.nvim'
 
 Plug 'preservim/nerdtree'
 
+Plug 'APZelos/blamer.nvim'
+
+Plug 'nvim-lua/plenary.nvim' " Dependency
+Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
+
+Plug 'airblade/vim-gitgutter'
+
 call plug#end()
+
+let g:blamer_enabled = 1

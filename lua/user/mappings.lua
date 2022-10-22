@@ -1,5 +1,7 @@
 local opts = { noremap = true, silent = true }
 
+local telescope = require('telescope.builtin')
+
 -- Shorten function name
 local keymap = vim.api.nvim_set_keymap
 
@@ -13,6 +15,11 @@ keymap("n", "ga", "<Plug>(EasyAlign)", opts)
 
 -- NerdTree
 keymap("n", "<leader>n", ":NERDTreeFocus<CR>", opts)
--- keymap("n", "<C-n>", ":NERDTree<CR>", opts)
 keymap("n", "<A-1>", ":NERDTreeToggle<CR>", opts)
-keymap("n", "<C-f>", ":NERDTreeFind<CR>", opts)
+
+-- Telescope
+vim.keymap.set('n', 'ff', telescope.find_files, opts)
+vim.keymap.set('n', 'fg', telescope.live_grep, opts)
+vim.keymap.set('n', 'fb', telescope.buffers, opts)
+vim.keymap.set('n', 'fh', telescope.help_tags, opts)
+
