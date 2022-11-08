@@ -11,3 +11,4 @@ exe ' source ' . configDir . '/plug-config/coc.vim'
 lua require("user.treesitter")
 lua require("user.which-key")
 lua require("user.mappings")
+lua require("user.toggleterm")

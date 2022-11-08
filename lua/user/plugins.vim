@@ -39,6 +39,10 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 Plug 'airblade/vim-gitgutter'
 
+Plug 'vim-test/vim-test'
+
+Plug 'akinsho/toggleterm.nvim'
+
 call plug#end()
 
 let g:blamer_enabled = 1
