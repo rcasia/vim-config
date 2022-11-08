@@ -10,7 +10,6 @@ keymap("n", "<C-i>", "<C-i>", opts)
 
 keymap("n", "ga", "<Plug>(EasyAlign)", opts)
 
-
 -- NerdTree
 keymap("n", "<leader>n", ":NERDTreeFocus<CR>", opts)
 -- keymap("n", "<C-n>", ":NERDTree<CR>", opts)

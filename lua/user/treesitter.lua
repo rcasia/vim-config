@@ -3,7 +3,7 @@ if not status_ok then
 	return
 end
 
-require 'nvim-treesitter.install'.compilers = { 'c', 'clang++'}
+require 'nvim-treesitter.install'.compilers = { 'gcc' }
 
 configs.setup({
 	ensure_installed = "all", -- one of "all" or a list of languages
