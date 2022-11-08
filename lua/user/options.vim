@@ -1,3 +1,4 @@
+set encoding=UTF-8
 set so=5
 set number
 set relativenumber
