@@ -1,0 +1,5 @@
+1. create a script to auto download the right jdt.js
+2. create a script to auto enable language support
+	- :CocInstall coc-java coc-java-lombok coc-python
+3. create a script to auto download lombok
+

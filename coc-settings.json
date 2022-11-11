@@ -1,5 +1,16 @@
 {
 "codeLens.enable": true,
 "java.referencesCodeLens.enabled": true,
-"java.jdt.ls.vmargs": "-javaagent:/usr/local/share/lombok/lombok.jar"
+"java.autobuild.enabled": true,
+"java.configuration.runtimes": [
+		{
+			"name": "Java 17",
+			"path": "/usr/lib/jvm/jdk-17",
+			"default": true
+		},
+		{
+			"name": "Java 11 Correto",
+			"path": "/usr/lib/jvm/java-11-amazon-corretto"
+		}
+  ]
 }
