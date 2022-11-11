@@ -26,7 +26,8 @@ Plug 'dhruvasagar/vim-open-url'
 
 Plug 'nvim-treesitter/nvim-treesitter'
 
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
+"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'mfussenegger/nvim-jdtls'
 
 Plug 'folke/which-key.nvim'
 

@@ -1,0 +1,4 @@
+If classes from target/generated-sources are not detected
+run command:
+	
+	mvn eclipse:eclipse
