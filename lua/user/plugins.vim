@@ -26,7 +26,8 @@ Plug 'dhruvasagar/vim-open-url'
 
 Plug 'nvim-treesitter/nvim-treesitter'
 
-"Plug 'neoclide/coc.nvim', {'branch': 'release'}
+Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
 Plug 'mfussenegger/nvim-jdtls'
 
 Plug 'folke/which-key.nvim'
@@ -43,6 +44,24 @@ Plug 'airblade/vim-gitgutter'
 Plug 'vim-test/vim-test'
 
 Plug 'akinsho/toggleterm.nvim'
+
+Plug 'lukas-reineke/indent-blankline.nvim'
+
+"Plug 'neovim/nvim-lspconfig'
+"Plug 'hrsh7th/cmp-nvim-lsp'
+Plug 'hrsh7th/cmp-buffer'
+Plug 'hrsh7th/cmp-path'
+Plug 'hrsh7th/cmp-cmdline'
+Plug 'hrsh7th/nvim-cmp'
+
+Plug 'folke/zen-mode.nvim'
+
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+
+Plug 'tpope/vim-fugitive'
+
+Plug 'flazz/vim-colorschemes'
 
 call plug#end()
 
