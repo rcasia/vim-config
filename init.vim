@@ -5,13 +5,16 @@ else
    let configDir = $HOME . '/.config/nvim'
 endif
 
+" to ensure that plugins get installed first
 exe ' source ' . configDir . '/plug-config/vim/plugins.vim'
-exe ' source ' . configDir . '/plug-config/vim/options.vim'
-exe ' source ' . configDir . '/plug-config/vim/coc.vim'
 
-exe 'luafile ' . configDir . '/plug-config/lua/mappings.lua'
-exe 'luafile ' . configDir . '/plug-config/lua/treesitter.lua'
-exe 'luafile ' . configDir . '/plug-config/lua/which-key.lua'
-exe 'luafile ' . configDir . '/plug-config/lua/toggleterm.lua'
-exe 'luafile ' . configDir . '/plug-config/lua/nvim-test.lua'
-exe 'luafile ' . configDir . '/plug-config/lua/plenary.lua'
+" execute all vim files in the config directory
+for file in glob(configDir . '/plug-config/vim/*.vim', 1, 1)
+  exe ' source ' . file
+endfor
+
+" execute all the scripts in the lua folder
+for file in glob(configDir . '/plug-config/lua/*.lua', 1, 1)
+  exe 'luafile ' . file
+endfor
+
