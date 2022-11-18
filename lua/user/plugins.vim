@@ -17,8 +17,16 @@ autocmd VimEnter * if len(filter(values(g:plugs), '!isdirectory(v:val.dir)'))
   \| PlugInstall --sync | source $MYVIMRC
 \| endif
 
-
+"""
 call plug#begin()
+
+" Code Formatting
+"Plug 'google/vim-maktaba'
+"Plug 'google/vim-codefmt'
+"Plug 'google/vim-glaive'
+
+" Project Root Directory
+Plug 'airblade/vim-rooter'
 
 Plug 'junegunn/vim-easy-align'
 
@@ -26,8 +34,9 @@ Plug 'dhruvasagar/vim-open-url'
 
 Plug 'nvim-treesitter/nvim-treesitter'
 
+" LSP
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
+Plug 'neovim/nvim-lspconfig'
 Plug 'mfussenegger/nvim-jdtls'
 
 Plug 'folke/which-key.nvim'
@@ -41,13 +50,10 @@ Plug 'nvim-telescope/telescope.nvim', { 'tag': '0.1.0' }
 
 Plug 'airblade/vim-gitgutter'
 
-Plug 'vim-test/vim-test'
-
 Plug 'akinsho/toggleterm.nvim'
 
 Plug 'lukas-reineke/indent-blankline.nvim'
 
-"Plug 'neovim/nvim-lspconfig'
 "Plug 'hrsh7th/cmp-nvim-lsp'
 Plug 'hrsh7th/cmp-buffer'
 Plug 'hrsh7th/cmp-path'
@@ -62,6 +68,19 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'tpope/vim-fugitive'
 
 Plug 'flazz/vim-colorschemes'
+
+Plug 'github/copilot.vim'
+
+Plug 'klen/nvim-test'
+
+" TDD
+Plug 'vim-test/vim-test'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-treesitter/nvim-treesitter'
+Plug 'antoinemadec/FixCursorHold.nvim'
+Plug 'nvim-neotest/neotest'
+Plug 'nvim-neotest/neotest-plenary'
+
 
 call plug#end()
 

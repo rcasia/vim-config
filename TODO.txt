@@ -2,4 +2,4 @@
 2. create a script to auto enable language support
 	- :CocInstall coc-java coc-java-lombok coc-python
 3. create a script to auto download lombok
-
+4. Make telescope and nerdTree find the real root dir

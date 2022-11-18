@@ -1,4 +1,16 @@
-If classes from target/generated-sources are not detected
-run command:
-	
-	mvn eclipse:eclipse
+1. Some classes are not detected?
+    Try:
+      mvn clean install -U -DskipTests=true
+      mvn eclipse:eclipse
+      mvn eclipse:clean
+
+    still?
+      manually delete all .project and .classpath files
+
+2. classes from target/generated-sources are not detected?
+
+    run command:
+      
+      mvn eclipse:eclipse
+
+

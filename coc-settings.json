@@ -2,6 +2,19 @@
 "codeLens.enable": true,
 "java.referencesCodeLens.enabled": true,
 "java.autobuild.enabled": true,
+"java.format.enabled": true,
+"java.format.onType.enabled": true,
+"java.format.settings.url": "/home/rcasia/.config/nvim/dependencies/eclipse-java-google-style.xml",
+"java.jdt.ls.vmargs": "--enable-preview",
+"java.completion.importOrder": {
+  "type": "array",
+  "description": "The order of the imports",
+  "default": [
+    "java",
+    "com.inditex",
+    "",
+  ]
+},
 "java.configuration.runtimes": [
 		{
 			"name": "Java 17",
