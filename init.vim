@@ -5,14 +5,13 @@ else
    let configDir = $HOME . '/.config/nvim'
 endif
 
-exe ' source ' . configDir . '/lua/user/plugins.vim'
-exe ' source ' . configDir . '/lua/user/options.vim'
-"exe ' source ' . configDir . '/lua/user/google-formatter.vim'
-exe ' source ' . configDir . '/plug-config/coc.vim'
-lua require("user.treesitter")
-lua require("user.which-key")
-lua require("user.mappings")
-lua require("user.toggleterm")
-lua require("user.nvim-test")
-lua require("user.telescope")
-lua require("user.plenary")
+exe ' source ' . configDir . '/plug-config/vim/plugins.vim'
+exe ' source ' . configDir . '/plug-config/vim/options.vim'
+exe ' source ' . configDir . '/plug-config/vim/coc.vim'
+
+exe 'luafile ' . configDir . '/plug-config/lua/mappings.lua'
+exe 'luafile ' . configDir . '/plug-config/lua/treesitter.lua'
+exe 'luafile ' . configDir . '/plug-config/lua/which-key.lua'
+exe 'luafile ' . configDir . '/plug-config/lua/toggleterm.lua'
+exe 'luafile ' . configDir . '/plug-config/lua/nvim-test.lua'
+exe 'luafile ' . configDir . '/plug-config/lua/plenary.lua'
