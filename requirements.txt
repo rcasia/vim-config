@@ -1,0 +1,6 @@
+Requirements:
+
+node lts gallium
+nvim >=0.7.0
+ripgrep
+:TSInstall typescript javascript
