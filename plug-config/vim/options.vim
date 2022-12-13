@@ -1,6 +1,6 @@
-colorscheme Atelier_SavannaDark 
+colorscheme seoul256
 set encoding=UTF-8
-set so=5
+set so=15
 set number
 set relativenumber
 set autoindent
@@ -9,4 +9,4 @@ set expandtab
 set tabstop=2
 set shiftwidth=2
 
-let g:rooter_patterns = ['.git', '=code', 'package.json', 'Makefile']
+let g:rooter_patterns = ['.git', 'mvnw', '=code', 'package.json', 'Makefile']

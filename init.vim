@@ -18,3 +18,5 @@ for file in glob(configDir . '/plug-config/lua/*.lua', 1, 1)
   exe 'luafile ' . file
 endfor
 
+" say hi when enter vim
+autocmd VimEnter * echom 'Welcome to Neovim ' . $USER . ' ʕ•ᴥ•ʔ'

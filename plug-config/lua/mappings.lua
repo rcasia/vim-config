@@ -7,7 +7,7 @@ keymap("i", "jk", "<ESC>", opts)
 keymap("i", "kj", "<ESC>", opts)
 
 -- Remap space as leader key
-keymap("n", "<Space>", "<leader>", opts)
+keymap("n", "<Space>", "", opts)
 
 keymap("n", "<C-Space>", "<cmd>WhichKey \\<leader><cr>", opts)
 keymap("n", "<C-i>", "<C-i>", opts)
@@ -28,3 +28,17 @@ vim.keymap.set('n', 'fh', telescope.help_tags, opts)
 
 --- ToggleTerm
 keymap("n", "<F12>", ":ToggleTerm<CR>", opts)
+
+--- Coc-java
+keymap("n", "<A-ENTER>", ":call CocAction('codeAction')<CR>", opts)
+keymap("n", "<F6>", "<Plug>(coc-rename)<CR>", opts)
+
+--- Vim-test
+keymap("n", "<F4>", ":TestNearest<CR>", opts)
+keymap("n", "<F5>", ":TestFile<CR>", opts)
+
+--- Amiga Java Format
+keymap("n", "<F7>", ":! mvn amiga-javaformat:apply<CR>", opts)
+
+-- Copilot
+keymap("n", "<F2>", ":Copilot<CR>", opts)

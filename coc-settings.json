@@ -1,6 +1,7 @@
 {
 "codeLens.enable": true,
 "java.referencesCodeLens.enabled": true,
+"java.signatureHelp.enabled": true,
 "java.autobuild.enabled": true,
 "java.format.enabled": true,
 "java.format.onType.enabled": true,

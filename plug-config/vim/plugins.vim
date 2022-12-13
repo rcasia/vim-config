@@ -51,14 +51,9 @@ Plug 'flazz/vim-colorschemes'
 
 Plug 'github/copilot.vim'
 
-Plug 'klen/nvim-test'
-
 " TDD
 Plug 'vim-test/vim-test'
-Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'antoinemadec/FixCursorHold.nvim'
-Plug 'nvim-neotest/neotest'
-Plug 'nvim-neotest/neotest-plenary'
 
 call plug#end()
