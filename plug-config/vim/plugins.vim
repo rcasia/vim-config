@@ -5,6 +5,9 @@ call plug#begin()
 "Plug 'google/vim-codefmt'
 "Plug 'google/vim-glaive'
 
+" Commenting Code
+Plug 'tpope/vim-commentary'
+
 " Project Root Directory
 Plug 'airblade/vim-rooter'
 
